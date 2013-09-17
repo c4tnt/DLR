@@ -1,0 +1,46 @@
+entityDef SI_Pipe {
+	"spawnclass"			"idSIPipe"
+
+	"editor_color"			"0 .5 .8"
+	"editor_mins"			"?"
+	"editor_maxs"			"?"
+
+	"editor_usage"			"Destructable object with special particle effect"
+
+	"editor_var health"			"amount of damage to recieve before becoming damaged."
+	"editor_bool solid"			"whether the object should be solid or not."
+	"editor_bool hide"			"whether the object should be visible when spawned. you need to set a value for triggering on/off to work"
+	"editor_var smoke"			"smoke system ( particle model ) to use"
+	"editor_var start_off"		"if set to 1, smoke system will not be visible on spawn"
+	"editor_var fx_damage"		"damage fx effect"
+	"editor_var fx_destroyed"		"death fx effect"
+
+	"solid"						"1"
+	"health"					"5"
+	"bleed"				"1"															
+
+	"mtr_detonate"				"textures/decals/bulleth02"
+	"mtr_detonate_glass"		"textures/decals/testbulletglass1"
+	"decal_size"				"10"
+
+	"model_smokespark"			"bulletsmokeandspark.prt"
+
+	"snd_metal"					"bullet_impact_metal"
+}
+
+entityDef SI_Energetical {
+	"spawnclass"			"idEnergetical"
+
+	"editor_color"			"0 .5 .8"
+	"editor_mins"			"?"
+	"editor_maxs"			"?"
+
+	"editor_usage"			"Static object with SFX effect on a open edges and intersecting surfaces"
+
+	"editor_bool solid"			"whether the object should be solid or not."
+	"editor_bool hide"			"whether the object should be visible when spawned. you need to set a value for triggering on/off to work"
+	"editor_var smoke"			"smoke system ( particle model ) to use"
+	"editor_var start_off"		"if set to 1, smoke system will not be visible on spawn"
+
+	"solid"						"1"
+}

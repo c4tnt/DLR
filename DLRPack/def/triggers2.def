@@ -1,0 +1,44 @@
+
+/***********************************************************************
+
+ trigger
+
+***********************************************************************/
+
+entityDef trigger_use {
+	"editor_color"				".9 .5 .5"
+	"editor_mins"				"?"
+	"editor_maxs"				"?"
+	"editor_material"			"textures/common/triguse"
+
+	"editor_usage"				"Variable sized useable trigger.  Must be targeted at one or more entities.  " \
+								"The basic time between firing is a random time between (wait - random) and (wait + random)."
+
+	"editor_var wait"			"seconds between triggerings.  Use '-1' to indicate one time only."
+	"editor_var random"			"wait variance.  trigger waits wait + or - random after firing targets before triggering again."
+	"editor_var delay"			"seconds to wait before firing after triggered."
+	"editor_var random_delay"	"delay variance.  trigger waits delay + or - random_delay before firing targets."
+	"editor_var call"			"script function to call when triggered."
+	"editor_var requires"		"item required in players inventory to fire."
+	"editor_var removeItem"		"if above item is removed from inventory when used."
+	"editor_var triggerFirst"	"don't activate until triggered."
+	"editor_var use_lowerweapon"	"Hide weapon when player see this trigger and treats shot command as use"
+	"editor_var use_hidden"		"Supress any visual tips"
+	"editor_var use_hidewhenwait"	"Hide all tips when trigger busy"
+	"editor_var use_action"		"This text will shown when you can use trigger."
+	"editor_var use_name"		"This object's description"
+
+	"spawnclass"				"idTrigger_Use"
+
+	"wait"						"0.5"
+	"random"					"0"
+	"delay"						"0"
+	"random_delay"				"0"
+
+	"use_lowerweapon"			"0"
+	"use_hidden"				"0"
+	"use_hidewhenwait"			"0"
+	"use_action"				""
+	"use_name"				""
+}
+

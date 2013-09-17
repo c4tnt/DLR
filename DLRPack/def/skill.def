@@ -1,0 +1,74 @@
+/***********************************************************************
+
+	skill.def
+	
+	Skill settings
+
+***********************************************************************/
+
+entityDef skills {
+	"0"			"skill_recruit"
+	"1"			"skill_marine"
+	"2"			"skill_veteran"
+	"3"			"skill_nightmare"
+}
+
+// skill 0
+entityDef skill_recruit {
+	"armorProtection"		"0.3"
+	"useDynamicProtection"	"1"
+	"healthTakeTime"		"0"
+	"healthTakeAmt"		"0"
+	"healthTakeLimit"		"0"
+	"damageScale"		"0.8"
+	"savingThrow"		"1"
+	"weaponList"		"weapon"
+	"healthMin"		"25"
+	"reject"			"not_easy"
+//	"replace weapon_shotgun"	"weapon_plasmagun"
+}
+
+// skill 1
+entityDef skill_marine {
+	"armorProtection"		"0.3"
+	"useDynamicProtection"	"1"
+	"healthTakeTime"		"0"
+	"healthTakeAmt"		"0"
+	"healthTakeLimit"		"0"
+	"damageScale"		"1"
+	"savingThrow"		"1"
+	"weaponList"		"weapon"
+	"healthMin"		"25"
+	"reject"			"not_medium"
+}
+
+// skill 2
+entityDef skill_veteran {
+	"armorProtection"		"0.2"
+	"useDynamicProtection"	"1"
+	"healthTakeTime"		"0"
+	"healthTakeAmt"		"0"
+	"healthTakeLimit"		"0"
+	"damageScale"		"1.7"
+	"savingThrow"		"0"
+	"weaponList"		"weapon"
+	"healthMin"		"0"
+	"reject"			"not_hard"
+}
+
+// skill 3
+entityDef skill_nightmare {
+	"armorProtection"		"0.2"
+	"useDynamicProtection"	"0"
+	"healthTakeTime"		"5"
+	"healthTakeAmt"		"5"
+	"healthTakeLimit"		"25"
+	"damageScale"		"3.5"
+	"savingThrow"		"0"
+	"weaponList"		"weapon_nightmare"
+	"healthMin"		"0"
+	"reject"			"not_nightmare"
+	"reject item_medkit"	""
+	"reject item_medkit_small"	""
+	"NoCheats"		"1"
+}

@@ -1,0 +1,542 @@
+textures/Metrics/Ambient/Brick64x32
+{ 
+	qer_editorimage  textures/Metrics/BRK64X32
+	{
+		blend	diffuseMap
+		rgb	0.8
+  		map  textures/Metrics/BRK64X32
+	}
+	{
+		blend	add
+		rgb	0.2
+  		map	textures/Metrics/BRK64X32
+	}     
+} 
+
+textures/Metrics/Ambient/Pointer32
+{ 
+	qer_editorimage  textures/Metrics/CURSOR32
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/CURSOR32
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/CURSOR32
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Grid32
+{ 
+	qer_editorimage  textures/Metrics/Grid256
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/Grid256
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/Grid256
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Grid32with4
+{ 
+	qer_editorimage  textures/Metrics/GRD64F8
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/GRD64F8
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/GRD64F8
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Grid32with8
+{ 
+	qer_editorimage  textures/Metrics/GRD64F16
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/GRD64F16
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/GRD64F16
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Grid32with16
+{ 
+	qer_editorimage  textures/Metrics/GRD64F32
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/GRD64F32
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/GRD64F32
+		rgb	0.2
+	}     
+} 
+
+
+textures/Metrics/Ambient/Measure
+{ 
+	qer_editorimage  textures/Metrics/Metric256
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/Metric256
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/Metric256
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Pipe1
+{ 
+	qer_editorimage  textures/Metrics/CW256
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/CW256
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/CW256
+		rgb	0.2
+	}     
+} 
+
+
+textures/Metrics/Ambient/Circle128
+{ 
+	qer_editorimage  textures/Metrics/Rad128
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/Rad128
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/Rad128
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Circle256
+{ 
+	qer_editorimage  textures/Metrics/Rad256
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/Rad256
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/Rad256
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/WallBorder16
+{ 
+	qer_editorimage  textures/Metrics/W256B32
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/W256B32
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/W256B32
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/WallBorder32
+{ 
+	qer_editorimage  textures/Metrics/W256B64
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/W256B64
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/W256B64
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/CrossGrid32
+{ 
+	qer_editorimage  textures/Metrics/XGrid256
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/XGrid256
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/XGrid256
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Border8
+{ 
+	qer_editorimage  textures/Metrics/BORD8
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/BORD8
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/BORD8
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Border16
+{ 
+	qer_editorimage  textures/Metrics/BORD16
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/BORD16
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/BORD16
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Border32
+{ 
+	qer_editorimage  textures/Metrics/BORD32
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/BORD32
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/BORD32
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/End8
+{ 
+	qer_editorimage  textures/Metrics/GND8
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/GND8
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/GND8
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/End16
+{ 
+	qer_editorimage  textures/Metrics/GND16
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/GND16
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/GND16
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/DVent32
+{ 
+	qer_editorimage  textures/Metrics/DECO1
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/DECO1
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/DECO1
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/DPipecap32
+{ 
+	qer_editorimage  textures/Metrics/DECO2
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/DECO2
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/DECO2
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/DWindow64
+{ 
+	qer_editorimage  textures/Metrics/WND1
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/WND1
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/WND1
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Rubble64
+{ 
+	qer_editorimage  textures/Metrics/GRA64
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/GRA64
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/GRA64
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Parqet32
+{ 
+	qer_editorimage  textures/Metrics/PARQ32
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/PARQ32
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/PARQ32
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/Parquet64
+{ 
+	qer_editorimage  textures/Metrics/PARQ64
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/PARQ64
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/PARQ64
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Ambient/StainedGlass64
+{ 
+	qer_editorimage  textures/Metrics/STAIN64
+	{
+		blend	diffuseMap
+  		map	textures/Metrics/STAIN64
+		rgb	0.8
+	}     
+	{
+		blend	add
+  		map	textures/Metrics/STAIN64
+		rgb	0.2
+	}     
+} 
+
+textures/Metrics/Caulk/Pointer32
+{ 
+	noshadows
+	forceOpaque			// will still seal levels
+	qer_editorimage  textures/Metrics/CURSOR32CL
+} 
+
+textures/Metrics/Caulk/Grid32
+{ 
+	noshadows
+	forceOpaque			// will still seal levels
+	qer_editorimage  textures/Metrics/Grid256CL
+} 
+
+textures/Metrics/Brick64x32
+{ 
+	qer_editorimage  textures/Metrics/BRK64X32
+	diffusemap  textures/Metrics/BRK64X32
+} 
+
+textures/Metrics/Pointer32
+{ 
+	qer_editorimage  textures/Metrics/CURSOR32
+	diffusemap  textures/Metrics/CURSOR32
+} 
+
+textures/Metrics/Grid32
+{ 
+	qer_editorimage  textures/Metrics/Grid256
+	diffusemap  textures/Metrics/Grid256
+} 
+
+textures/Metrics/Pipe1
+{ 
+	qer_editorimage  textures/Metrics/CW256
+	diffusemap  textures/Metrics/GRD64F8
+} 
+
+textures/Metrics/Grid32with4
+{ 
+	qer_editorimage  textures/Metrics/GRD64F8
+	diffusemap  textures/Metrics/GRD64F8
+} 
+
+textures/Metrics/Grid32with8
+{ 
+	qer_editorimage  textures/Metrics/GRD64F16
+	diffusemap  textures/Metrics/GRD64F16
+} 
+
+textures/Metrics/Grid32with16
+{ 
+	qer_editorimage  textures/Metrics/GRD64F32
+	diffusemap  textures/Metrics/GRD64F32
+} 
+
+
+textures/Metrics/Measure
+{ 
+	qer_editorimage  textures/Metrics/Metric256
+	diffusemap  textures/Metrics/Metric256
+} 
+
+textures/Metrics/Circle128
+{ 
+	qer_editorimage  textures/Metrics/Rad128
+	diffusemap  textures/Metrics/Rad128
+} 
+
+textures/Metrics/Circle256
+{ 
+	qer_editorimage  textures/Metrics/Rad256
+	diffusemap  textures/Metrics/Rad256
+} 
+
+textures/Metrics/WallBorder16
+{ 
+	qer_editorimage  textures/Metrics/W256B32
+	diffusemap  textures/Metrics/W256B32
+} 
+
+textures/Metrics/WallBorder32
+{ 
+	qer_editorimage  textures/Metrics/W256B64
+	diffusemap  textures/Metrics/W256B64
+} 
+
+textures/Metrics/CrossGrid32
+{ 
+	qer_editorimage  textures/Metrics/XGrid256
+	diffusemap  textures/Metrics/XGrid256
+} 
+
+textures/Metrics/Border8
+{ 
+	qer_editorimage  textures/Metrics/BORD8
+	diffusemap  textures/Metrics/BORD8
+} 
+
+textures/Metrics/Border16
+{ 
+	qer_editorimage  textures/Metrics/BORD16
+	diffusemap  textures/Metrics/BORD16
+} 
+
+textures/Metrics/Border32
+{ 
+	qer_editorimage  textures/Metrics/BORD32
+	diffusemap  textures/Metrics/BORD32
+} 
+
+textures/Metrics/End8
+{ 
+	qer_editorimage  textures/Metrics/GND8
+	diffusemap  textures/Metrics/GND8
+} 
+
+textures/Metrics/End16
+{ 
+	qer_editorimage  textures/Metrics/GND16
+	diffusemap  textures/Metrics/GND16
+} 
+
+textures/Metrics/DVent32
+{ 
+	qer_editorimage  textures/Metrics/DECO1
+	diffusemap  textures/Metrics/DECO1
+} 
+
+textures/Metrics/DPipecap32
+{ 
+	qer_editorimage  textures/Metrics/DECO2
+	diffusemap  textures/Metrics/DECO2
+} 
+
+textures/Metrics/DWindow64
+{ 
+	qer_editorimage  textures/Metrics/WND1
+	diffusemap  textures/Metrics/WND1
+} 
+
+textures/Metrics/Rubble64
+{ 
+	qer_editorimage  textures/Metrics/GRA64
+  	diffusemap	textures/Metrics/GRA64
+} 
+
+textures/Metrics/Parqet32
+{ 
+	qer_editorimage  textures/Metrics/PARQ32
+	diffusemap	textures/Metrics/PARQ32
+} 
+
+textures/Metrics/Parquet64
+{ 
+	qer_editorimage  textures/Metrics/PARQ64
+	diffusemap	textures/Metrics/PARQ64
+} 
+
+textures/Metrics/StainedGlass64
+{ 
+	qer_editorimage  textures/Metrics/STAIN64
+	diffusemap	textures/Metrics/STAIN64
+} 
+

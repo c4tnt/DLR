@@ -1,0 +1,61 @@
+/***********************************************************************
+
+ miscellaneous
+
+***********************************************************************/
+
+entityDef func_laser {
+	"editor_color"				"1 .5 .3"
+	"editor_mins"				"-8 -8 -8"
+	"editor_maxs"				"8 8 8"
+
+	"editor_usage"				"Creates a beam from origin to the nearest wall.  Turns on and off when triggered."
+	"editor_var skin"			"Material to use for the beam's texture"
+	"editor_var start_off"		"Set to 1 to have beam off when level starts."
+	"editor_var width"			"Width of the beam."
+	"editor_var length"			"Maximum length of a beam."
+	
+	"spawnclass"				"idLaser"
+}
+
+entityDef func_shooter {
+	"editor_color"				"0 .5 .8"
+	"editor_mins"				"-8 -8 -8"
+	"editor_maxs"				"8 8 8"
+	"editor_rotatable"				"1"
+
+	"editor_usage"				"Shoot trap. Will shoot when triggered"
+	"editor_var start_off"			"Set to 1 to have shooter off when level starts."
+	"editor_var def_projectile"			"Shooter use this projectile"	
+	"editor_var projectile_spread"		"per-projectile spread"
+	"editor_var num_projectiles"			"Projectiles per shoot"
+	"editor_var clip_size"			"Shoots before reloading"
+	"editor_var push"				"Throw velocity for physical projectiles"
+
+	"editor_var wait"				"wait before retrigger"
+	"editor_var delay"				"delay after the triggering"
+	"editor_var random_delay"			"random delay time"
+	"editor_var attack_accuracy"			"per-shot accuracy"
+
+	"editor_var snd_spinup"			"sound before shooting"
+	"editor_var snd_reload"			"sound when reloading"
+	"editor_var snd_disabled"			"sound when shooter is disabled"
+	"editor_var snd_shoot"			"shoot sound"
+
+	"editor_var shoot_time"			"time between projectiles"
+	"editor_var reload_time"			"reloading time"
+
+	"editor_var target"					"aimed to a target_null and trigger all targets when shoot"
+
+	"spawnclass"				"idFuncShooter"
+}
+
+entityDef func_mark {
+	"editor_color"				"1 .5 .3"
+	"editor_mins"				"-8 -8 -8"
+	"editor_maxs"				"8 8 8"
+
+	"editor_usage"				"Mark this"
+	
+	"spawnfunc"				"Vmarker"
+}

@@ -1,0 +1,817 @@
+// MARS_CITY1
+
+// The format for adding new entries is as such:
+// assign subtitles to s_shader
+// command format is:
+// sshader <name> {
+// <speech|bgspeech|event|ambience>[:subpriority]
+// <timecode|lengthsynked>
+// [checkdistance|fadedistance]
+// [color <r,g,b|colorname>]
+// [timecode]"Subtitle text"
+// ...
+// [timecode]"Subtitle text"
+
+sshader guisounds_IntroMC {
+speech
+timecode
+[00:02:00] "Male robot: Incoming, transport, detected,."
+[00:10:00] "Darkstar: Mars Approach, Darkstar with you, zero seven zero, sixty-three, passing through three eight thousand."
+[00:18:00] "S.L. Medley: Roger Darkstar, descend to two thousand, set speed, contact ground on two six nine seven two."
+[00:23:00] "Darkstar: Roger that, Tower."
+}
+
+sshader marscity_rocketintro_vo {
+speech
+timecode
+[00:14:00] "Darkstar: Tower, Darkstar on final."
+[00:20:00] "S.L. Medley: We've got you Darkstar, you are set for lockdown. Welcome back!"
+}
+
+sshader marscity_cin_marine1_1 {
+speech
+"S.L. Medley: We have them on radar, sir, they'll be landing in a few moments."
+}
+
+sshader marscity_cin_bertruger1_1 {
+speech
+"Betruger: Excellent. See that Counselor Swann is sent directly to me."
+}
+
+sshader marscity_cin_marine1_2 {
+speech
+"S.L. Medley: Yes sir."
+}
+
+sshader marscity_cin_swann1_1 {
+speech
+"Swann (exasperated): I can't believe it's come to this, I didn't want to come here."
+}
+
+sshader marscity_cin_campbell1_1 {
+speech
+"Campbell: He left you no choice."
+}
+
+sshader marscity_cin_swann1_2 {
+speech
+"Swann: True, but this is the last time. I'm tired of running damage control every time he makes a mess."
+}
+
+sshader marscity_cin_campbell1_2 {
+speech
+"Campbell (boasting): Right. You're the control and if that fails, I'm the damage."
+}
+
+sshader marscity_cin_swann1_3 {
+speech
+"Swann (determined): If that's what it takes, Betruger is gonna start doing things our way."
+}
+
+sshader marscity_cin_campbell1_3 {
+speech
+"Campbell: Whatever you say, counselor."
+}
+
+sshader ship_liftoff {
+event
+"(DARKSTAR'S ENGINES THRUST AND LIFTOFF)"
+}
+
+sshader marscity_sec_hangar_trigger {
+speech
+"R. Cooper: Welcome to Mars.  All new arrivals need to check in at reception."
+}
+
+sshader marscity_sec_hangar_primary {
+speech
+"R. Cooper: If you're looking for someone to help you just head to reception."
+}
+
+sshader marscity_sec_hangar_secondary1 {
+speech
+"R. Cooper: I've got to process the transport log; I can't talk with you now."
+}
+
+sshader marscity_sec_hangar_secondary2 {
+speech
+"R. Cooper: If I don't get this log to central authority it'll be my neck, please move along."
+}
+
+sshader marscity_sec_hangar_surprise {
+speech
+"R. Cooper: Hey, what're you doing?"
+}
+
+sshader marscity_civilian1_trigger {
+speech
+"M. Caseon: I've got to get out of here."
+}
+
+sshader marscity_civilian1_primary {
+speech
+"M. Caseon: I'm getting off this rock and you should too."
+}
+
+sshader marscity_civilian1_secondary1 {
+speech
+"M. Caseon: If you're staying here, watch your back."
+}
+
+sshader marscity_civilian1_secondary2 {
+speech
+"M. Caseon: You should be careful..it's not safe here - trust no one."
+}
+
+sshader marscity_civilian1_surprise {
+speech
+"<Unknown sound civ1_5>"
+}
+
+sshader mars_city1_annc_02 {
+bgspeech
+"Female PA System: Welcome to Mars City; Union Aerospace's premiere research facility. To expedite your processing please proceed directly to reception."
+}
+
+sshader mars_city1_annc_03 {
+bgspeech
+"Female PA System: Shuttle Delta-Tango-1-4 preparing for departure."
+}
+
+sshader mars_city1_annc_04 {
+bgspeech
+"Female PA System: Mars City is a smoke free facility. Please smoke only in designated areas. Thank you for your cooperation."
+}
+
+sshader mars_city1_annc_05 {
+bgspeech
+"Female PA System: <Unknown sound comp_announce5>."
+}
+
+sshader mars_city1_annc_06 {
+bgspeech
+"Female PA System: Attention ... Director Banks please report to central administration."
+}
+
+sshader mars_city1_annc_07 {
+bgspeech
+"Female PA System: Attention UAC personnel. Interested in earning more credits? Volunteer at Delta Labs today ! See your service branch director for more details."
+}
+
+sshader mars_city1_annc_08 {
+bgspeech
+"Female PA System: Attention ... Dr. Braddock please report to environment management office 4-Alpha."
+}
+
+sshader mars_city1_annc_10 {
+bgspeech
+"Female PA System: The UAC cares about the quality of life of it's employees, please take advantage of our quality medical care services."
+}
+
+sshader marscity_sec_checkin_welcome {
+speech
+"Security Officer: Welcome to Mars, marine."
+}
+
+sshader marscity_sec_checkin_need {
+speech
+"Security Officer: I'm gonna need you to step on one of those red squares on the floor for a bioscan. This'll only take a second."
+}
+
+sshader marscity_sec_checkin_hold {
+speech
+"Security Officer: You're gonna need to hold still. Moving around only makes the test take longer."
+}
+
+sshader marscity_sec_checkin_waisting {
+speech
+"Security Officer: It's your time you're wasting here."
+}
+
+sshader marscity_sec_checkin_letmeget {
+speech
+"Security Officer: Okay, let me get this started."
+}
+
+sshader marscity_sec_checkin_cleared {
+speech
+"Security Officer: Allright, bioscan looks good. You're cleared for entry."
+}
+
+sshader video_uacwelcome {
+bgspeech
+timecode
+[00:00:00] "(CORPORATE INTRO MUSIC)"
+[00:03:00] "On behalf of the UAC, welcome to Mars City."
+[00:06:00] "This facility serves as the central hub for all scientific research, archeological study and military operations."
+[00:14:00] "Goal number one of the UAC is the safety and well being of all employees and guests."
+[00:19:00] "To help achieve this goal, we ask for you to follow all UAC corporate procedures at all times."
+[00:24:00] "This includes restricting your movement to areas for which you have clearance."
+[00:28:00] "Always remain alert and aware of what you and others are doing."
+[00:32:00] "If notice anything out of the ordinary or just have a simple question find the nearest UAC Security Guard."
+[00:39:00] "They are here to help no matter how large or small the problem is."
+[00:43:00] "Our station on Mars provides a perfect blend of work habitats, recreational facilities and social support structures."
+[00:50:00] "This ensures our goal of providing a home away from home experience for everyone."
+[00:56:00] "Keep this in mind as you help pursue our ground breaking research that is destined to transform the daily lifes of everyone here and throughout the solar system."
+[01:06:00] "If you need more detailed assistance please see your human resources manager."
+[01:10:00] "If you are a guest you may bring up any issue with your appointed UAC liason."
+[01:15:00] "Thank you, and have a nice day."
+}
+
+sshader video_marine_sops {
+bgspeech
+timecode
+[00:00:00] "Welcome to Mars marine, this briefing is designed to acquaint you with a few of the standard operating procedures here on the Mars post."
+[00:07:00] "First and foremost, Chain of Command. All enlisted personell are under the command of Master Sergeant Thomas Kelly. "
+[00:14:00] "Sergeant Kelly will assign you to a security detail headed by a security chief. Please report to your security chief for all duty related concerns. "
+[00:23:30] "While on duty, please stay in your assigned patrol converage area. All PCAs have been predesignated to provide overlapping security and maximize efficiency. "
+[00:33:30] "All personnel must have proper authorization in assigned areas. Be sure to annotate any discrepencies in your Security Inspection Report. "
+[00:43:30] "Safety is integral to all operations here on Mars. Handle firearms with extreme caution, never discharge weapons in an area that may compromise the installation's structural integrity. "
+[00:57:00] "Remembering these procedures is paramount to your success here on Mars. Keep in mind that you represent the greatest fighting force in the galaxy and your actions are a reflection on the corps. "
+[01:10:00] "Take good care and good luck on your new assignment."
+}
+
+sshader audiolog_mc1_berneche {
+bgspeech
+timecode
+[00:00:00] "This is the audio log of Maintenance Technician Adam Berneche, dated November 10th, 2145. "
+[00:06:00] "I fixed the couplings on the heat shields this morning with no problems. I did, however, have an odd experience while I was down there. "
+[00:14:30] "Shortly after finishing the first coupling adjustment, I distinctly heard... whispering. When I went to investigate the sounds, I found nothing. "
+[00:23:00] "I’ve checked the work logs, and I was the only person scheduled to be in that area today. "
+[00:28:00] "That experience, coupled with the stories I’ve heard from some guys over in the Delta Labs has me... pretty freaked out. "
+[00:34:00] "I’m really beginning to hate going down to the underground maintenance area. "
+[00:38:00] "The people down there are... a bit off. The mumbling, the weird looks... the whole place is... just plain creepy. "
+[00:45:00] "I’m always expecting someone to jump out at me. I’ve secured my tools and the busted modulator in the storage cabinet next to the maintenance elevator. "
+[00:53:00] "Technicians should use cabinet code 3-9-6 to access them. End of log."
+}
+
+sshader marscity_receptionist_trigger_1 {
+speech
+"H. Feiner: Welcome to Mars."
+}
+
+sshader marscity_receptionist_trigger_2 {
+speech
+"H. Feiner: First time?"
+}
+
+sshader marscity_receptionist_trigger_3 {
+speech
+"H. Feiner: You can just leave your bag there. I'll have it sent up to your quarters."
+}
+
+sshader marscity_receptionist_trigger_4 {
+speech
+"H. Feiner: OK, there are a few things we need to take care of first. This is your personal data assistant; you'll need this to access all secure areas."
+}
+
+sshader marscity_receptionist_trigger_5 {
+speech
+"H. Feiner: If you get clearance for any security zones, it'll download directly."
+}
+
+sshader marscity_receptionist_trigger_6 {
+speech
+"H. Feiner: It's important, so don't lose it!"
+}
+
+sshader marscity_receptionist_trigger_7 {
+speech
+"H. Feiner: I see here that Sergeant Kelly has requested your immediate attention."
+}
+
+sshader marscity_receptionist_trigger_8 {
+speech
+"H. Feiner: Head directly to Marine Command."
+}
+
+sshader marscity_receptionist_trigger_9 {
+speech
+"H. Feiner: It's just that way, follow the signs."
+}
+
+sshader marscity_receptionist_primary {
+speech
+"H. Feiner: You better move along, it looks like you have some important things to do."
+}
+
+sshader marscity_receptionist_secondary1 {
+speech
+"H. Feiner: The last marine that kept the Sergeant waiting was permanently assigned to guard duty at the solid waste facility. You better move!"
+}
+
+sshader marscity_receptionist_secondary2 {
+speech
+"H. Feiner: Sergeant Kelly doesn't like to be kept waiting, you better move along."
+}
+
+sshader marscity_receptionist_secondary3 {
+speech
+"H. Feiner: You'd better move along."
+}
+
+sshader marscity_maint_tech_hallway_primary {
+speech
+"A. Chang: Haven't seen you before. You must be with that new detachment coming to check on us."
+}
+
+sshader marscity_maint_tech_hallway_secondary1 {
+speech
+"A. Chang: Is there some type of problem? I'm just trying to get my work done here."
+}
+
+sshader marscity_maint_tech_hallway_secondary2 {
+speech
+"A. Chang: I'm trying to get these systems reconfigured, so I can't talk now."
+}
+
+sshader marscity_speech_swann1 {
+speech
+"Counselor Swann: I'm here because there seems to be some very serious problems."
+}
+
+sshader marscity_speech_bertruger1 {
+speech
+"Dr. Betruger (condescending): Oh really? Do I need to remind you of the ground-breaking work we're doing here?"
+}
+
+sshader marscity_speech_swann2 {
+speech
+"Counselor Swann: No. But I've been authorized by the board to look at everything."
+}
+
+sshader marscity_speech_bertruger2 {
+speech
+"Dr. Betruger (scathing): The board authorized you? Hmmm. The board doesn't know the first thing about science. All they want is something to make them more money, some product. (almost threatening) Don't worry. They'll get their product."
+}
+
+sshader marscity_speech_swann3 {
+speech
+"Counselor Swann (frustrated): After how many accidents? Tell me, Dr. Betruger, why are so many workers spooked, complaining, requesting transfers off Mars?                                 "
+}
+
+sshader marscity_speech_bertruger3 {
+speech
+"Dr. Betruger: They simply can't handle life here. They're exhausted and overworked. If I had a larger, more competent staff, and bigger budget, even these few accidents could've been avoided."
+}
+
+sshader marscity_speech_swann4 {
+speech
+"Counselor Swann (defiant): I'm afraid you'll get nothing more until my report is filed with the board. I will need full access, Dr. Betruger, Delta included. I won't have any difficulties doing that, will I?"
+}
+
+sshader marscity_speech_bertruger4 {
+speech
+"Dr. Betruger (threatening): Only if you get lost, Swann. Just stay out of my way. Amazing things will happen here soon. You just wait."
+}
+
+sshader marscity_speech_swann5 {
+speech
+"Counselor Swann: Let's go..."
+}
+
+sshader marscity_security_guard_admin_trigger {
+speech
+"J. Yezback: Listen, buddy, you don't have clearance for this area. Move along."
+}
+
+sshader marscity_security_guard_admin_primary {
+speech
+"J. Yezback: I can't help you here. Move out to Marine Command, they can help you."
+}
+
+sshader marscity_security_guard_admin_secondary1 {
+speech
+"J. Yezback: If you don't move out now, they're gonna bust both our asses."
+}
+
+sshader marscity_security_guard_admin_secondary2 {
+speech
+"J. Yezback: Goddammit, marine, get outta here."
+}
+
+sshader marscity_marine_bathroom_excuseme {
+speech
+"T. Washington (friendly): 'Scuse me..."
+}
+
+sshader marscity_marine_bathroom_primary {
+speech
+"T. Washington: I don't think I've seen you before. You must be a replacement for one of the guys we lost."
+}
+
+sshader marscity_marine_bathroom_secondary1 {
+speech
+"T. Washington: Try not to let this place get in your head. Just stay focused on your job, and you'll be back on Earth before you know it."
+}
+
+sshader marscity_marine_bathroom_secondary2 {
+speech
+"T. Washington: Not a lot to do around here. But watch your back."
+}
+
+sshader video_ipn_news {
+bgspeech
+timecode
+[00:00:00] "(HIGH ENERGY NEWS REPORT MUSIC)"
+[00:02:00] "IPN News Network. Your Universe Now."
+[00:06:00] "The Union Aerospace Corporation denied allegations today of several reports showing a growing military presence on Mars. "
+[00:15:00] "A spokesperson stated that increased activity is simply a \"tactical deployment to outline planetary sectors.\""
+[00:23:00] "Authorities continue to search for the activists responsible in Monday's bombing of a Biomech production facility, resulting in the destruction of hundreds of Biomech labor units."
+[00:34:00] "In space news, mining station Amun is reporting nine dead and twenty eight wounded in what appears to be an ore canopy failure during routine operations. "
+[00:45:00] "This is the fifth incident in a string of mishaps that have plagued asteroid strip-mining facilities in recent months. "
+[00:52:00] "Deep space Medridi successful executed the first of four engine bursts designed to alter the probe's course, according to officials. "
+[01:02:00] "The probe's logic core first requested the diversion following yesterday's discovery of a negative light object outside the orbit of Sedna. "
+[01:11:00] "The probe is set to resume its outer system mapping mission next week, following further scans of the fluctuating anomaly. "
+[01:19:00] "Faint signals continue to be received from the failed Europa Orbiter, which is said to be further evidence of survivors in Thursday's crash. "
+[01:27:30] "Union Aerospace, who funded the privately operated orbiter, stated that there were no survivors and the signal is part of the NavCom system's automated distress beacon. "
+[01:39:00] "Critics of the massive corporation say the Europa's signal is undeniably originating from one or more survivors, and that high costs of mounting a rescue operation have led to the UAC's refusal."
+[01:52:00] "In IPN's business news, Mixom corporation has filed suit against rival company Moxim, claiming the company infringed on several pressure-sealed patents utilized in planetary bases. "
+[02:05:00] "Moxim lawyers have threatened a countersuit, saying that Mixom creates inferior parts based on original Moxim designs. "
+[02:13:00] "Senate majority leaders this morning approved a nearly 80.2 trillion dollar spending plan."
+[02:20:00] "The plan includes cuts in funding for the lunar outpost and several planetary platforms, as well as major revisions to the public health care system."
+[02:29:00] "The plan also calls for cutting the budget deficit in half by 2147."
+[02:34:30] "Gentech firm Groetre met further resistance this week in its plans to introduce genetically manufactured health products on Earth."
+[02:43:00] "A long-time supplier to military and space sectors, genetically-modified products have seen poor sales in the consumer market."
+[02:51:00] "Groetre's latest \"Medkit\" technology was slated to hit stores next month."
+[02:55:00] "(HIGH ENERGY NEWS REPORT MUSIC)"
+[02:56:00] "For IPN news, this is Roger McEllen, listing subspace news on the hour."
+}
+
+sshader marscity_kitchen_maint_primary {
+speech
+"K.Tang: Ah, someone new. It's always nice seeing new faces around here. Hope you enjoy your stay."
+}
+
+sshader marscity_kitchen_maint_secondary1 {
+speech
+"K.Tang: I've been here four years. My advice is to work hard and stay outta trouble."
+}
+
+sshader marscity_kitchen_maint_secondary2 {
+speech
+"K.Tang: You want my advice? Don't go poking your nose around places where you aren't supposed to."
+}
+
+sshader marscity_marine1_sitting_1_convo1 {
+speech
+"M. Marak: Miller, you hear about Corporal Allen?"
+}
+
+sshader marscity_marine2_sitting_1_convo1 {
+speech
+"K. Miller: Yeah, they say he just lost it. Shipped home this week."
+}
+
+sshader marscity_marine1_sitting_1_convo2 {
+speech
+"M. Marak: We lose one, gain another."
+}
+
+sshader marscity_marine2_sitting_1_convo2 {
+speech
+"K. Miller: No shit. I wonder who they're gonna move to Bravo Team now?"
+}
+
+sshader marscity_marine1_sitting_1_convo3 {
+speech
+"M. Marak: Who knows? I just hope they don't take anyone from my squad. I hate pulling double-shifts."
+}
+
+sshader marscity_marine2_sitting_1_convo3 {
+speech
+"K. Miller: I hear ya."
+}
+
+sshader marscity_marine1_sitting_1_primary {
+speech
+"M. Marak: Another newbie. Welcome to the worst assignment you'll ever have."
+}
+
+sshader marscity_marine1_sitting_1_secondary1 {
+speech
+"M. Marak: Come back for a drink when you get some free time."
+}
+
+sshader marscity_marine1_sitting_1_secondary2 {
+speech
+"M. Marak: This place is always open, if you wanna come by and forget."
+}
+
+sshader marscity_marine2_sitting_1_primary {
+speech
+"K. Miller: Another replacement, huh?"
+}
+
+sshader marscity_marine2_sitting_1_secondary1 {
+speech
+"K. Miller: Listen up, newbie, I'll give you some advice. Keep your eyes open and stay focused."
+}
+
+sshader marscity_marine2_sitting_1_secondary2 {
+speech
+"K. Miller: Yeah, I see people come and go around here all the time. I wonder how long you'll last."
+}
+
+
+sshader marscity_hallway_maint_1_convo1 {
+speech
+"R. Slang: Yeah, I saw those suits arrive too. Weird. The UAC must be worried about something."
+}
+
+sshader marscity_hallway_maint_2_convo1 {
+speech
+"J. Kim: I hear there's been more accidents in Delta."
+}
+
+sshader marscity_hallway_maint_1_convo2 {
+speech
+"R. Slang: Ha, accidents? That's good. Is that what they're calling them now?"
+}
+
+sshader marscity_hallway_maint_2_convo2 {
+speech
+"J. Kim: So, tell me, just what the hell is happening over there?"
+}
+
+sshader marscity_hallway_maint_1_convo3 {
+speech
+"R. Slang: Beats me, man. Look, all I do is repair the converters when they blow, okay, that's it."
+}
+
+sshader marscity_hallway_maint_2_convo3 {
+speech
+"J. Kim: Fine. But what's overloading them so much? I mean, how much damn power do they need?"
+}
+
+sshader marscity_hallway_maint_1_convo4 {
+speech
+"R. Slang: I wouldn't ask him if I was you, man. I heard Travis started poking around and he got transferred, fast. Didn't even see him leave."
+}
+
+sshader marscity_hallway_maint_2_convo4 {
+speech
+"J. Kim: Hell, no one saw him go. Was here one minute, gone the next."
+}
+
+sshader marscity_hallway_maint_1_convo5 {
+speech
+"R. Slang: Lucky bastard... "
+}
+
+sshader marscity_hallway_maint_1_primary {
+speech
+"R. Slang: (irritated): I'm really trying to get this fixed quickly, so, uh, do ya mind?"
+}
+
+sshader marscity_hallway_maint_1_secondary1 {
+speech
+"R. Slang: If you can fix this, you can stay and help, but otherwise, get going."
+}
+
+sshader marscity_hallway_maint_1_secondary2 {
+speech
+"R. Slang: Why you bothering me? Can't you see that I'm working?"
+}
+
+sshader marscity_hallway_maint_2_primary {
+speech
+"J. Kim: Marine command is right around the corner. Why don't you go bother someone there."
+}
+
+sshader marscity_hallway_maint_2_secondary1 {
+speech
+"J. Kim: Listen. I'd love to talk, but I'm really busy."
+}
+
+sshader marscity_hallway_maint_2_secondary2 {
+speech
+"J. Kim: What? Do I look like a tour director, leatherneck?"
+}
+
+sshader marscity_marine1_ver1_hq_trigger {
+speech
+"S. Holmes: You need to report to Sergeant Kelly A-SAP. He's in Command HQ."
+}
+
+sshader marscity_marine1_ver1_hq_primary {
+speech
+"S. Holmes: Don't waste anymore time, go see the sarge."
+}
+
+sshader marscity_marine1_ver1_hq_secondary1 {
+speech
+"S. Holmes: Sarge is gonna have your ass if you don't get to Command HQ pronto."
+}
+
+sshader marscity_marine1_ver1_hq_secondary2 {
+speech
+"S. Holmes: If you're late reporting in, sarge will have you patrolling outside for a week."
+}
+
+sshader marscity_marine1_ver2_hq_primary {
+speech
+"Don't you have a mission to do?"
+}
+
+sshader marscity_marine1_ver2_hq_secondary {
+speech
+"You screw up you that mission and Sarge'll have your ass"
+}
+
+sshader marscity_sci_hospital_1 {
+speech
+"Doctor: Hold him down."
+}
+
+sshader marscity_sci_hospital_2 {
+speech
+"Doctor: I'm almost ready."
+}
+
+sshader marscity_sci_hospital_3 {
+speech
+"Doctor: OK, he's sedated now."
+}
+
+sshader marscity_sci_monitor_primary {
+speech
+"R. Kasal (annoyed): I can't be interrupted now; I've got work to finish!"
+}
+
+sshader marscity_sci_monitor_secondary1 {
+speech
+"R. Kasal: Please don't disturb me! Can't you see I'm busy?"
+}
+
+sshader marscity_sci_monitor_secondary2 {
+speech
+"R. Kasal: I'm doing very difficult work here. I can't be disturbed."
+}
+
+sshader marscity_marine4_hq_primary {
+speech
+"E. Grafton (friendly): Welcome to the unit. I'll see you around."
+}
+
+sshader marscity_marine4_hq_secondary1 {
+speech
+"E. Grafton (laughing): Hope you don't go crazy here... like the others!"
+}
+
+sshader marscity_marine4_hq_secondary2 {
+speech
+"E. Grafton: Well, I've got a few things I need to do, so I'll catch up with you later."
+}
+
+sshader marscity_marine2_hq_primary {
+speech
+"K. Lee-Creel: I'm trying to reconfigure this little guy. I can't talk now."
+}
+
+sshader marscity_marine2_hq_secondary1 {
+speech
+"K. Lee-Creel: Hey, this is tricky business. I can't be hassled."
+}
+
+sshader marscity_marine2_hq_secondary2 {
+speech
+"K. Lee-Creel: If you need something, go talk to sarge."
+}
+
+sshader marscity_sci_team_request {
+speech
+timecode
+[00:01:00] "Science Officer: This is Delta science management. We would like to request another security team here in Delta."
+[00:08:00] "Science Officer: Thank you."
+}
+
+sshader marscity_marine3_hq_respond {
+speech
+"V. King: Yes sir."
+}
+
+sshader marscity_marine3_hq_primary {
+speech
+"V. King: Don't you have some orders you need to be following?"
+}
+
+sshader marscity_marine3_hq_secondary1 {
+speech
+"V. King: I'm too busy to talk now."
+}
+
+sshader marscity_marine3_hq_secondary2 {
+speech
+"V. King: Got lots of work here. Sorry."
+}
+
+sshader marscity_cin_sarge1 {
+speech
+"Sgt. Kelly: Took your sweet time, marine? Now, here's the situation." 
+}
+
+sshader marscity_cin_sarge2 {
+speech
+"Sgt. Kelly: Another member of the science team has gone missing. Since you're the ranking F.N.G., you get to find him." 
+}
+
+sshader marscity_cin_sarge3 {
+speech
+"Sgt. Kelly: I want you to check out the decommissioned comm facility. We heard he might be heading that way."
+}
+
+sshader marscity_cin_sarge4 {
+speech
+"Sgt. Kelly: The only way there is through the service passage under Mars City."
+}
+
+sshader marscity_cin_sarge5 {
+speech
+"Sgt. Kelly: I've programmed this sentry to guide you to the maintenence elevator. I hope you follow the sentry better than you've followed orders so far."
+}
+
+sshader marscity_cin_sarge6 {
+speech
+"Sgt. Kelly: You pick up some gear at the security checkpoint at the bottom of the elevator."
+}
+
+sshader marscity_cin_sarge7 {
+speech
+"Sgt. Kelly: Oh, and when you find him, just bring him back. Do not hurt him. Now move out!"
+}
+
+sshader marscity_sarge_primary {
+speech
+"Sgt. Kelly (annoyed): When you complete your mission, report back here. Move out."
+}
+
+sshader marscity_sarge_secondary {
+speech
+"Sgt. Kelly: You got a mission to accomplish. Start moving, marine."
+}
+
+sshader marscity_sarge_secondary2 {
+speech
+"Sgt. Kelly: Are you deaf, marine? When I say move out, you better move."
+}
+
+sshader marscity_marine6_hq_primary {
+speech
+"S. L. Medley: Didn't you hear sarge? He gave you a mission. Move out, marine."
+}
+
+sshader marscity_marine6_hq_secondary1 {
+speech
+"S. L. Medley: Sarge will have your ass if you stand here wasting my time."
+}
+
+sshader marscity_marine6_hq_secondary2 {
+speech
+"S. L. Medley: I got better things to do than talk to you, marine."
+}
+
+sshader marscity_marine5_hq_primary {
+speech
+"D. Morton: No time to talk, bud, we both got work to do."
+}
+
+sshader marscity_marine5_hq_secondary1 {
+speech
+"D. Morton: Are you deaf, marine? You got a mission to perform. You can't stay here."
+}
+
+sshader marscity_marine5_hq_secondary2 {
+speech
+"D. Morton: Move out, marine."
+}
+
+sshader marscity_hallway_maint_1_convo2_1 {
+speech
+"R. Slang: Did you hear what Carter said?"
+}
+
+sshader marscity_hallway_maint_2_convo2_1 {
+speech
+"J. Kim: No..."
+}
+
+sshader marscity_hallway_maint_1_convo2_2 {
+speech
+"R. Slang: He said he saw some strange creatures or something down in Delta. He said it wasn't human."
+}
+
+sshader marscity_hallway_maint_2_convo2_2 {
+speech
+"J. Kim (incredulous): What? You can't believe anything that guy says."
+}
+
+sshader marscity_hallway_maint_1_convo2_3 {
+speech
+"R. Slang: I'm just telling ya, that's what he said. I don't know if it's true."
+}
+
+sshader marscity_hallway_maint_2_convo2_3 {
+speech
+"J. Kim: Another reason why I can't wait to get outta here."
+}

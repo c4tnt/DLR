@@ -1,0 +1,178 @@
+/***********************************************************************
+
+	all entitys
+
+***********************************************************************/
+
+// Add new target
+scriptEvent 	void	addTarget( entity target );
+
+// Remove target
+scriptEvent 	void	untarget( entity target );
+
+// Remove key from the spawnargs
+scriptEvent	void	clearKey( string key );
+
+// Set axial direction
+// axis:
+// 0 - x axis 
+// 1 - y axis 
+// 2 - z axis will be aligned by dir vector
+//
+// angle is a roll angle for the entity
+scriptEvent	void	setDirection( vector dir, float angle, float axis );
+
+scriptEvent void	setGui(float guiNum, string gui);
+scriptEvent void	precacheGui(string gui);
+scriptEvent string	getGuiParm(float guiNum, string key);
+scriptEvent float	getGuiParmFloat(float guiNum, string key);
+scriptEvent void	guiNamedEvent(float guiNum, string event);
+scriptEvent void	setGuiParmDirect(float guiNum, string key, string val);
+scriptEvent void	setGuiFloatDirect(float guiNum, string key, float val);
+
+/***********************************************************************
+
+	system events (called via 'sys.')
+
+***********************************************************************/
+// Get variable from selected skill settings.
+scriptEvent string	getSkillVar( string name, string default );
+
+// Set variable from selected skill settings.
+scriptEvent void	setSkillVar( string name, string value );
+
+// Makes a vector.
+scriptEvent	vector	Vector( float x, float y, float z );
+
+// Returns the interpolation between a veca and vecb.
+scriptEvent	vector	VecLerp( vector veca, vector vecb, float part );
+
+// Projects vector vec onto a flat with normal norm.
+scriptEvent	vector	VecProjectPlane( vector vec, vector norm );
+
+// Returns the original vector clamped by length.
+scriptEvent	vector	VecTrunc( vector vec, float length );
+
+// Returns the original vector snapped to integer values.
+scriptEvent	vector	VecSnap( vector vec );
+
+// Random zero or nonzero value with chance "chance". Useful with if: if (sys.luck(0.3) ) { ... }
+scriptEvent	float	luck( float chance );
+
+// Messaging ( nonstable )
+scriptEvent	void	messageAll( string text, vector origin, vector size, float lifetime );
+scriptEvent	void	messageAlign( float align );
+scriptEvent	void	messageScale( float scale );
+scriptEvent	void	messageSpacing( float spacing );
+scriptEvent	void	messageFont( string font );
+scriptEvent	void	messageColor( vector color, float alpha );
+
+scriptEvent	void	resetSpawnArgs( );
+scriptEvent	void	selectSpawnDef( string classname );
+
+// Spawn single particle
+scriptEvent	void	spawnParticle( string name, vector origin );
+
+// Runs special script when player dies
+scriptEvent	void	setGameoverScript( string name );
+
+/***********************************************************************
+
+	players
+
+***********************************************************************/
+
+scriptEvent	void 	setArmor( float health );
+scriptEvent	float	getArmor();
+scriptEvent	void 	setHealthPool( float health );
+scriptEvent	float	getHealthPool();
+scriptEvent	float 	getMaxHealth();
+scriptEvent	float 	getMaxArmor();
+scriptEvent	void 	setBanish();		// Removed, special for EoC
+
+scriptEvent	entity 	getFocusEntity();		// Returns an entity which player is looking at
+scriptEvent	float 	getFocusType();		// Returns the active cursor type
+
+// Accessible
+// void 	setHealth( float health );
+// float	getHealth();
+
+/***********************************************************************
+
+	func_shooter
+
+***********************************************************************/
+
+scriptEvent void	TrapReload( );
+scriptEvent void	Aim( entity ent );
+
+/***********************************************************************
+
+	func_laser
+
+***********************************************************************/
+
+scriptEvent entity	getTouchEntity( );
+//scriptEvent void	Aim( entity ent );
+
+/***********************************************************************
+
+	trigger_use
+
+***********************************************************************/
+scriptEvent void	setDescription( string desc );
+
+// Accessible
+// void 	lock( float locked );
+// float	isLocked();
+
+/***********************************************************************
+
+	Projectiles
+
+***********************************************************************/
+
+scriptEvent void	Explode();
+scriptEvent void	Fizzle();
+scriptEvent entity	SplitProjectile( string def, vector offset, vector dir );
+scriptEvent void	projectileCreateProjectile( entity owner, vector start, vector dir );
+scriptEvent void	projectileLaunchProjectile( vector start, vector dir, vector pushVelocity );
+scriptEvent void	setGravity( float gravity );
+
+/***********************************************************************
+
+	AI
+
+***********************************************************************/
+
+scriptEvent entity	customMissile( string def, string joint, float useSpawnarg );
+scriptEvent void	launchProjectile( string def, string joint );
+scriptEvent void	addHealth( float add );
+scriptEvent void	moveToPositionDirect( vector pos );
+scriptEvent void	avoidObstacles( float avoid );
+
+scriptEvent void	triggerFX( string joint, string fx );
+scriptEvent entity	startEmitter( string name, string joint, string particle );
+scriptEvent entity  getEmitter( string name );
+scriptEvent void	stopEmitter( string name );
+
+/***********************************************************************
+
+	Actors
+
+***********************************************************************/
+
+scriptEvent void	setDamageGroupScale(string groupName, float scale);
+scriptEvent void	setDamageGroupScaleAll(float scale);
+scriptEvent float	getDamageGroupScale(string goupName);
+scriptEvent void	setDamageCap(float cap);
+scriptEvent void	setWaitState(string waitState);
+scriptEvent string	getWaitState();
+
+/***********************************************************************
+
+	lights
+
+***********************************************************************/
+// Changes light's color over the given time in seconds.
+scriptEvent void 	fadeToLight( vector color, float time );

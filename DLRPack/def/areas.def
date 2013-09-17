@@ -1,0 +1,38 @@
+entityDef area_marker {
+	"spawnclass"			"idAreaMarker"
+
+	"editor_color"			".8 .8 .0"
+	"editor_mins"			"?"
+	"editor_maxs"			"?"
+	"editor_material"			"textures/common/areamark"
+
+	"editor_usage"			"Area marker"
+}
+
+entityDef area_counter {
+
+	"editor_color"				".0 .5 .5"
+	"editor_mins"				"-8 -8 -8"
+	"editor_maxs"				"8 8 8"
+	"editor_material"			"textures/common/areacount"
+
+	"editor_usage"			"In-area entity counter. Fires when number of specified entities lies between (min_count) and (max_count)" \
+					"The basic time between firing is a random time between (wait - random) and (wait + random)."
+
+	"editor_var wait"			"seconds between triggerings.  Use '-1' to indicate one time only."
+	"editor_var random"		"wait variance.  trigger waits wait + or - random after firing targets before triggering again."
+	"editor_var delay"			"seconds to wait before firing after triggered."
+	"editor_var random_delay"		"delay variance.  trigger waits delay + or - random_delay before firing targets."
+	"editor_var call"			"script function to call when triggered."
+	"editor_var min_count"		"minimal entitys count"
+	"editor_var max_count"		"maximal entitys count"
+	"editor_var flip_interval"		"when 1, trigger will fires when entity count do not satisfy the interval."
+	"editor_var area"			"area to use, may be multiple such as target"
+
+	"spawnclass"				"idAreaCount"
+
+	"wait"						"0.5"
+	"random"					"0"
+	"delay"						"0"
+	"random_delay"				"0"
+}

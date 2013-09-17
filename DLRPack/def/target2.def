@@ -1,0 +1,18 @@
+
+/***********************************************************************
+
+ target II
+
+***********************************************************************/
+
+entityDef target_Skill {
+	"editor_color"			"1 1 0"
+	"editor_mins"			"-8 -8 -8"
+	"editor_maxs"			"8 8 8"
+
+	"editor_usage"			"When triggered, changes the skill."
+	"editor_var skill"			"New skill name."
+
+	"spawnclass"			"idTarget_Skill"
+}
+

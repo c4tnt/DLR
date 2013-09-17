@@ -1,0 +1,8 @@
+// trigger entities use this material
+textures/common/triguse
+{
+	qer_editorimage textures/common/triguse.tga
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	noshadows
+	trigger
+}

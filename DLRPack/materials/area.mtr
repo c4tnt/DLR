@@ -1,0 +1,7 @@
+textures/common/areamark
+{
+	qer_editorimage textures/common/areamark.tga
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	noshadows
+	trigger
+}

@@ -1,0 +1,254 @@
+textures/decals/waterSplash
+{
+	DECAL_MACRO
+
+	decalInfo 0.2 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map textures/decals/splash.tga
+		clamp
+		vertexColor
+	}
+}
+textures/water_source/blood_1 {
+	qer_editorimage textures/water_source/b1_editor.tga
+	discrete
+	nonsolid
+	water
+	twosided
+	translucent
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend blend
+		map textures/water_source/blood_1.tga
+		translate time*.0,time*-.01
+		alpha 0.7
+	}
+}
+textures/water_source/blood_1_pp {
+	qer_editorimage textures/water_source/b1_editor.tga
+	discrete
+	nonsolid
+	water
+	twosided
+	translucent
+
+	{
+		blend add
+		map textures/hell/bacteria_4.tga
+		translate time*.01,time*-.01
+		alpha 0.8
+	}
+	{
+		blend blend
+		map textures/hell/bacteria_4.tga
+		translate time*.1,time*.1
+		alpha 0.8
+	}
+}
+
+textures/water_source/neon_pp {
+	qer_editorimage textures/water_source/neon_editor.tga
+	translucent
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 0.02
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend blend
+		map textures/water_source/neon.tga
+		translate time*.0,time*-.01
+		alpha 0.3
+	}
+}
+textures/water_source/neon {
+	qer_editorimage textures/water_source/neon_editor.tga
+	discrete
+	nonsolid
+	water
+	translucent
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend blend
+		map textures/water_source/neon.tga
+		translate time*.0,time*-.01
+		alpha 0.3
+	}
+}
+textures/Water_source/Water_clear 
+{
+	qer_editorimage textures/water_source/W_C_editor.tga
+	discrete
+	nonsolid
+	water
+	twosided
+	diffusemap textures/water_source/Water_Clear.tga
+	translucent
+
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend filter
+		map textures/Water_source/Water_clear.tga
+		translate time*.0,time*-.01
+	}
+}
+
+textures/Water_source/Water_clear_pp
+{
+	qer_editorimage textures/water_source/W_C_editor.tga
+	discrete
+	nonsolid
+	water
+	twosided
+	diffusemap textures/water_source/Water_Clear.tga
+	translucent
+
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 0.05
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend blend
+		map textures/Water_source/Water_clear.tga
+		translate time*.0,time*-.01
+		alpha 0.5
+	}
+}
+
+textures/water_source/gxfreshnel
+{
+	translucent
+	nonsolid
+	discrete
+	water
+	qer_editorimage textures\decals\bloodpool01_jim
+	{
+		mirrorRenderMap	512 512					// size of the texture to draw the mirror view in 
+		translate		0.5, 0.5
+		scale			0.5, 0.5
+		program		SD_watervertex.vfp			//shader program
+		vertexParm	0	time * 0.070 , time * 0.0		//scroll
+		vertexParm	1	5.00						//magnitude
+		fragmentMap	0 	_scratch				//the mirror/reflection image
+		fragmentMap	1	heightmap (textures/sfx/untitled001, 1)	//normal map for distortion & "per pixel" fresnel
+		fragmentMap	2	_currentRender			//for distortion
+	}
+}
+
+textures/water_source/water_caulk
+{ 
+	noshadows
+	nonsolid
+	discrete
+	water
+	qer_editorimage  textures/Metrics/CURSOR32CL
+} 
+
+textures/water_source/toxin {
+	qer_editorimage textures/water_source/T_editor.tga
+	discrete
+	nonsolid
+	water
+	translucent
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend filter
+		map textures/water_source/toxin.tga
+		translate time*.0,time*-.01
+	}
+}
+
+textures/water_source/toxin_pp {
+	qer_editorimage textures/water_source/T_editor.tga
+	discrete
+	nonsolid
+	water
+	translucent
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 0.02
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/water_source/vp_water.tga
+	}
+
+	{
+		blend filter
+		map textures/water_source/toxin.tga
+		translate time*.0,time*-.01
+	}
+}
+textures/water_source/snowalpha {
+   translucent
+   solid
+   slick
+   qer_editorimage          textures/rewire/hardice_d.tga
+   bumpmap                  textures/rewire/hardice_local.tga
+   {
+	blend diffusemap
+   	map               textures/rewire/hardice_d.tga
+   }
+   specularmap              textures/rewire/hardice_s.tga
+}

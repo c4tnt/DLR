@@ -1,0 +1,62 @@
+void idPlayer::UpdateHudStats( idUserInterface *_hud ) {
+	int staminapercentage;
+	int i;
+	const char* s;
+
+	assert( _hud );
+
+	if ( !max_stamina ) {
+		// stamina disabled, so show full stamina bar
+		staminapercentage = 100.0f;
+	} else {
+		staminapercentage = idMath::FtoiFast( 100.0f * stamina / max_stamina );
+	}
+
+	for ( i = 1; i < AMMO_NUMTYPES; i++ ) {
+		s = idWeapon::GetAmmoNameForNum( i );
+		if ( s != NULL && s[0] != 0 ) {
+			_hud->SetStateInt( va( "player_%s", s ), inventory.HasAmmo( i, 1 ) );
+		} else {
+			_hud->SetStateInt( va( "player_%i", i ), inventory.HasAmmo( i, 1 ) );
+		}
+	}
+
+	_hud->SetStateInt( "player_health", health );
+	_hud->SetStateInt( "player_stamina", staminapercentage );
+	_hud->SetStateInt( "player_armor", inventory.armor );
+	_hud->SetStateInt( "player_hr", heartRate );
+	_hud->SetStateInt( "player_nostamina", ( max_stamina == 0 ) ? 1 : 0 );
+
+	_hud->HandleNamedEvent( "updateArmorHealthAir" );
+
+	if ( healthPulse ) {
+		_hud->HandleNamedEvent( "healthPulse" );
+		StartSound( "snd_healthpulse", SND_CHANNEL_ITEM, 0, false, NULL );
+		healthPulse = false;
+	}
+
+	if ( healthTake ) {
+		_hud->HandleNamedEvent( "healthPulse" );
+		StartSound( "snd_healthtake", SND_CHANNEL_ITEM, 0, false, NULL );
+		healthTake = false;
+	}
+
+	if ( inventory.ammoPulse ) { 
+		_hud->HandleNamedEvent( "ammoPulse" );
+		inventory.ammoPulse = false;
+	}
+	if ( inventory.weaponPulse ) {
+		// We need to update the weapon hud manually, but not
+		// the armor/ammo/health because they are updated every
+		// frame no matter what
+		UpdateHudWeapon();
+		_hud->HandleNamedEvent( "weaponPulse" );
+		inventory.weaponPulse = false;
+	}
+	if ( inventory.armorPulse ) { 
+		_hud->HandleNamedEvent( "armorPulse" );
+		inventory.armorPulse = false;
+	}
+
+	UpdateHudAmmo( _hud );
+}
